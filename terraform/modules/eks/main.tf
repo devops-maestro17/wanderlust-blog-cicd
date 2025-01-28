@@ -85,4 +85,21 @@ resource "aws_iam_role_policy" "eks_policy" {
           "elasticloadbalancing:DescribeTargetGroups",
           "elasticloadbalancing:DescribeTargetHealth",
           "elasticloadbalancing:DescribeListeners",
-          "elasticloadbalancing:DescribeRulePri
+          "elasticloadbalancing:DescribeRulePriorities", 
+          "elasticloadbalancing:DescribeRules",
+          "elasticloadbalancing:DescribeTargetGroupAttributes", 
+          "autoscaling:DescribeAutoScalingGroups", 
+          "autoscaling:DescribeLaunchConfigurations", 
+          "autoscaling:DescribeLaunchTemplates", 
+          "autoscaling:DescribeScalingActivities", 
+          "autoscaling:DescribeScheduledActions", 
+          "autoscaling:DescribeAutoScalingInstances", 
+          "autoscaling:DescribeTags", 
+          "autoscaling:DescribeTerminationPolicyTypes", 
+          "autoscaling:DescribeWarmPool"
+        ],
+        "Resource": "*" 
+      }
+    ]
+  })
+}
