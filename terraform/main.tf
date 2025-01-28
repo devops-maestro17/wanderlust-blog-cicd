@@ -28,7 +28,6 @@ module "vpc" {
 # Create the EKS Cluster
 module "eks" {
   source  = "./modules/eks"
-  version = "~> 0.1.0" # Replace with actual version if published
 
   region              = var.region
   cluster_name        = "my-eks-cluster" 
